@@ -1,0 +1,29 @@
+[[plugins]]
+repo = 'Shougo/dein.vim' #パッケージの管理ツール
+
+[[plugins]]
+repo = 'scrooloose/nerdtree' #フォルダ構造ツリー表示
+
+[[plugins]]
+repo = 'itchyny/lightline.vim' #モード等のステータス表示
+
+[[plugins]]
+repo = 'tyru/caw.vim' #コメントアウトショートカット
+
+[[plugins]]
+repo = 'Yggdroot/indentLine' #インデントの可視化
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter' #git管理下のスクリプトの変更点の可視化
+
+[[plugins]]
+repo = 'gko/vim-coloresque' #色コードの可視化
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim' #入力補完
+
+[[plugins]]
+repo = 'scrooloose/syntastic.git' #コード入力規則
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim' #tsファイルが認識されてなかった
