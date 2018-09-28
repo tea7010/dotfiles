@@ -17,7 +17,10 @@ repo = 'Yggdroot/indentLine' #インデントの可視化
 repo = 'airblade/vim-gitgutter' #git管理下のスクリプトの変更点の可視化
 
 [[plugins]]
-repo = 'gko/vim-coloresque' #色コードの可視化
+repo = 'lilydjwg/colorizer' #色コードの可視化
+
+[[plugins]]
+repo = 'KabbAmine/vCoolor.vim' #カラーピッカー
 
 [[plugins]]
 repo = 'Shougo/neocomplete.vim' #入力補完
@@ -26,4 +29,4 @@ repo = 'Shougo/neocomplete.vim' #入力補完
 repo = 'scrooloose/syntastic.git' #コード入力規則
 
 [[plugins]]
-repo = 'leafgarland/typescript-vim' #tsファイルが認識されてなかった
+repo = 'leafgarland/typescript-vim' #ts対応

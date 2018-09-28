@@ -13,6 +13,8 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
+" yankなどクリップボードに入れる
+set clipboard+=unnamed
 
 " 見た目系
 " 行番号を表示
@@ -53,17 +55,6 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-" キーマップ
-" 選択部分をクリップボードにコピー
-vmap <C-C> "*y
-" 挿入モード時、クリップボードから貼り付け
-imap <C-V> <ESC>"*pa
-" 選択部分をクリップボードの値に置き換え
-vmap <C-V> d"*P
-" コマンドライン時、クリップボードから貼り付け
-cmap <C-V> <C-R>*
-" 選択部分をクリップボードに切り取り
-vmap <C-X> "*d<ESC>
 "-----------------------------------------------------------
 """
 " Dein TOML
@@ -190,6 +181,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ["flake8"]
+let g:syntastic_python_flake8_args = "--max-line-length=100"
